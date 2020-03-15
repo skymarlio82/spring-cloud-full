@@ -1,0 +1,11 @@
+server:
+  port: 8762
+spring:
+  application:
+    name: user-service
+  cloud:
+    config:
+      uri: http://localhost:8769
+      fail-fast: true
+  profiles:
+    active: pro
