@@ -1,13 +1,6 @@
+
 package com.forezp.entity;
 
-import javax.persistence.Column;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
-
-/**
- * Created by fangzhipeng on 2017/7/10.
- */
 public class User {
 
     private Long id;

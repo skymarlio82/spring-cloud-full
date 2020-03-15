@@ -1,60 +1,64 @@
+
 package com.forezp.entity;
 
 import java.io.Serializable;
-import javax.persistence.*;
 
-/**
- * Created by fangzhipeng on 2017/7/10.
- */
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @Entity
 public class Blog implements Serializable {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
 
-    @Column(nullable = false)
-    private String username;
+	private static final long serialVersionUID = 6715200920586182599L;
 
-    @Column
-    private String title;
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	private Long id;
 
-    @Column
-    private String suject;
+	@Column(nullable = false)
+	private String username;
 
+	@Column
+	private String title;
 
-    public Blog() {
-    }
+	@Column
+	private String suject;
 
-    public Long getId() {
-        return id;
-    }
+	public Blog() {
+	}
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+	public Long getId() {
+		return id;
+	}
 
-    public String getUsername() {
-        return username;
-    }
+	public void setId(Long id) {
+		this.id = id;
+	}
 
-    public void setUsername(String username) {
-        this.username = username;
-    }
+	public String getUsername() {
+		return username;
+	}
 
-    public String getTitle() {
-        return title;
-    }
+	public void setUsername(String username) {
+		this.username = username;
+	}
 
-    public void setTitle(String title) {
-        this.title = title;
-    }
+	public String getTitle() {
+		return title;
+	}
 
-    public String getSuject() {
-        return suject;
-    }
+	public void setTitle(String title) {
+		this.title = title;
+	}
 
-    public void setSuject(String suject) {
-        this.suject = suject;
-    }
+	public String getSuject() {
+		return suject;
+	}
+
+	public void setSuject(String suject) {
+		this.suject = suject;
+	}
 }
