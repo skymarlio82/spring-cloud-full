@@ -1,3 +1,4 @@
+
 package com.forezp;
 
 import org.junit.Test;
@@ -11,6 +12,6 @@ public class BlogServiceApplicationTests {
 
 	@Test
 	public void contextLoads() {
-	}
 
+	}
 }
