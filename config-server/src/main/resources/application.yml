@@ -17,7 +17,7 @@ spring:
 #        native:
 #          search-locations: classpath:/shared
   profiles:
-    active: native
+    active: git
   application:
     name: config-server
 server:

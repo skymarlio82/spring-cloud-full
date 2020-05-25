@@ -34,7 +34,7 @@ public class BlogController {
 
 	@SuppressWarnings("unchecked")
 	@ApiOperation(value="发布博客", notes="发布博客")
-	@PreAuthorize("hasRole('USER')")
+	@PreAuthorize("hasRole('ADMIN')")
 	@PostMapping("")
 	@SysLogger("postBlog")
 	public RespDTO<Blog> postBlog(@RequestBody Blog blog) {
@@ -45,7 +45,7 @@ public class BlogController {
 
 	@SuppressWarnings("unchecked")
 	@ApiOperation(value="根据用户id获取所有的blog", notes="根据用户id获取所有的blog")
-	@PreAuthorize("hasAuthority('ROLE_USER')")
+	@PreAuthorize("hasAuthority('ROLE_ADMIN')")
 	@GetMapping("/{username}")
 	@SysLogger("getBlogs")
 	public RespDTO<List<Blog>> getBlogs(@PathVariable String username) {
@@ -60,7 +60,7 @@ public class BlogController {
 
 	@SuppressWarnings("unchecked")
 	@ApiOperation(value="获取博文的详细信息", notes="获取博文的详细信息")
-	@PreAuthorize("hasAuthority('ROLE_USER')")
+	@PreAuthorize("hasAuthority('ROLE_ADMIN')")
 	@GetMapping("/{id}/detail")
 	@SysLogger("getBlogDetail")
 	public RespDTO<BlogDetailDTO> getBlogDetail(@PathVariable Long id) {
