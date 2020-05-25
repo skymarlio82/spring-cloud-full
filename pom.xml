@@ -7,31 +7,18 @@
 	<artifactId>SpringCloudInAction</artifactId>
 	<version>1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<modules>
-		<module>blog-service</module>
-		<module>config-server</module>
-		<module>eureka-server</module>
-		<module>gateway-service</module>
-		<module>user-service</module>
-		<module>monitor-service</module>
-		<module>uaa-service</module>
-		<module>common</module>
-		<module>admin-service</module>
-		<module>log-service</module>
-		<module>zipkin-service</module>
-	</modules>
-	<parent>
-		<groupId>org.springframework.boot</groupId>
-		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>1.5.3.RELEASE</version>
-		<relativePath /> <!-- lookup parent from repository -->
-	</parent>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<spring-cloud.version>Dalston.RELEASE</spring-cloud.version>
 	</properties>
+	<parent>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-parent</artifactId>
+		<version>1.5.3.RELEASE</version>
+		<relativePath /> <!-- lookup parent from repository -->
+	</parent>
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -54,4 +41,17 @@
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
+	<modules>
+		<module>common</module>
+		<module>eureka-server</module>
+		<module>config-server</module>
+		<module>gateway-service</module>
+		<module>zipkin-service</module>
+		<module>monitor-service</module>
+		<module>admin-service</module>
+		<module>uaa-service</module>
+		<module>user-service</module>
+		<module>blog-service</module>
+		<module>log-service</module>
+	</modules>
 </project>
