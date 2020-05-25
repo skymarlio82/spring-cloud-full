@@ -6,10 +6,9 @@ spring:
         git:
           uri: https://github.com/skymarlio82/spring-cloud-full
           searchPaths: respo
-          username: 124746406@qq.com
-          password:
+          username: skymarlio82
+          password: _Rrf9jxwd
       label: master
-
 # ---native
 #spring:
 #  cloud:
