@@ -6,7 +6,7 @@ spring:
       uri: http://localhost:8769
       fail-fast: true
   profiles:
-      active: pro
+    active: pro
 management:
   security:
     enabled: false
