@@ -9,8 +9,6 @@ spring:
           username: skymarlio82
           password: _Rrf9jxwd
       label: master
-  bus:
-    enabled: true
 # ---native
 #spring:
 #  cloud:
@@ -32,7 +30,3 @@ server:
 management:
   security:
     enabled: false
-  endpoints:
-    web:
-      exposure:
-        include: bus-refresh
