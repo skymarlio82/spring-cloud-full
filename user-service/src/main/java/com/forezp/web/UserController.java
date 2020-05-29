@@ -66,7 +66,7 @@ public class UserController {
 	@Value("${foo}")
 	private String foo = null;
 
-	@GetMapping("/foo")
+	@GetMapping("/bus/foo")
 	public String foo() {
 		return foo;
 	}
