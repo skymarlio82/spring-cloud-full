@@ -17,4 +17,4 @@ spring:
     password: guest
     publisher-confirms: true
     virtual-host: /
-foo: foo version 3
+foo: foo version 2
