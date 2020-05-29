@@ -20,8 +20,17 @@ spring:
     active: git
   application:
     name: config-server
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
 server:
   port: 8769
 management:
   security:
     enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: "*"

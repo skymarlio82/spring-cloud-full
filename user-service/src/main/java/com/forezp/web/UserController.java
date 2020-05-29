@@ -62,4 +62,12 @@ public class UserController {
 	public void test() {
 		rabbitTemplate.convertAndSend(RabbitConfig.queueName, "Hello from RabbitMQ!");
 	}
+
+	@Value("${foo}")
+	private String foo = null;
+
+	@GetMapping("/foo")
+	public String foo() {
+		return foo;
+	}
 }
